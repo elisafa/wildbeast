@@ -15,7 +15,7 @@ a{
   text-decoration: none;
 }
 img{
-  max-width: 100%;
+  width: 100%;
   display: block;
   border-radius: 5px;
 }
@@ -84,7 +84,7 @@ img{
   margin-left: 30px;
 }
 
-@media(max-width: 760px){
+@media(max-width: 700px){
   .header{
     grid-template-columns: auto;
   }
@@ -172,6 +172,13 @@ img{
   margin: 0 auto;
   padding: 30px;
 }
+
+@media (max-width:700px){
+.content{
+  grid-template-columns: auto;
+  }
+}
+
 .col-wide{
   grid-column: 1/-1;
 }
@@ -249,6 +256,12 @@ p{
   color: #B07DFB;
   max-width: 16em;;
 }
+@media (max-width: 700px){
+  .destaque{
+    font-size: 24px;
+    justify-self: center;
+  }
+}
 
 .citacao, .atributos{
   align-self: start;
@@ -285,7 +298,9 @@ p{
   align-content: flex-start;
   padding: 30px;
   gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 
 /* FOOTER */
 .footer{
